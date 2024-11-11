@@ -170,4 +170,17 @@ Class Arrays {
                 System.out.println("Длина table1[2]: " + table1[2].length);
                 System.out.println("Длина table1[3]: " + table1[3].length);
                 }
+
+		//Цикл for -each
+		System.out.println();
+		int[] nums5 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+		int sum = 0;
+
+		for(int x1 : nums) {
+			System.out.println("Значение: " + x1);
+			sum += x1;
+			if(x1 == 5)
+				break;
+		}
+		System.out.println("Сумма первых шести элементов массива nums5: " + sum);
 }
