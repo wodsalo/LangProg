@@ -183,4 +183,39 @@ Class Arrays {
 				break;
 		}
 		System.out.println("Сумма первых шести элементов массива nums5: " + sum);
+
+		System.out.println();
+		//Подсчет суммы элементов в двумерном массиве
+		int sum1 = 0;
+		int[][] nums6 = new int[3][5];
+
+		for(int i = 0; i < nums6.length; i++)
+			for(int j1 = 0; j1 < nums6[i].length; j1++)
+				nums6[i][j1] = (i + 1) * (j1 + 1);
+
+		//Выводим элементы массивы и считаем сумму
+		for(int[] x1 : nums6)
+			for(int y : x1) {
+				System.out.println("Значение: " + y);
+				sum1 += y;
+			}
+		System.out.println("Сумма: " + sum1);
+
+		System.out.println();
+		//Поиск при помощи цикла "for -each"
+		int val = 9;
+		boolean found = false;
+
+		for(int x1 : nums5) {
+			if(x1 == val) {
+				found = true;
+				break;
+			}
+		}
+		if(found)
+			System.out.println("Значение " + val + "найденно");
+		else
+			System.out.println("Значение " + val + "не найдено");
+
+	}
 }
