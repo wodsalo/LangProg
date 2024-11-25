@@ -155,8 +155,6 @@ class Bits {
 				System.out.println("100 / " + j + " равно " + res);
 
 		}
-		
-	
 	}
 }
 
