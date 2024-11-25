@@ -85,7 +85,6 @@ class Modif {
 				System.out.println("Индекс" + i + " выходит за границы массива");
 		}
 		System.out.println();
-
 	}
 }	
 
