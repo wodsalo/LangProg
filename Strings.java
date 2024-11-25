@@ -122,7 +122,6 @@ class Strings {
 			}
 			if(i2==phoneNumbers.length)
 				System.out.println("Ничего не найдено");
-
 		}
 	}
 }
